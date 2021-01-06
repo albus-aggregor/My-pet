@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>service</title>
+  <link rel="icon" href="images1.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="style_s.css">
+	<script type="text/javascript" src="swiper.min.js"></script>
+</head>
+<body>
+ <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<div>
+      		<img src="puppies.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Dogs</a><br><span>woof, woof;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="Cat.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Cats</a><br><span>meow, meow;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="fish.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Fishes</a><br><span>hums, hums;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="parrot.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Parrot</a><br><span>squawk, squawk;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="duck.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Duck</a><br><span>quack, quack;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="guinea_pigs.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Guinea pigs</a><br><span>whistle, whistle;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="horse.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Horse</a><br><span>neigh, neigh;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="hen.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Hen</a><br><span>COCK-A-DOODLE-DOO;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="pigeon.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Pigeon</a><br><span>coo roo-c'too-coo;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="rabbit.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Rabbit</a><br><span>squeak, squeak;</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="goat.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Goat</a><br><span> baa. ...,</span></h3>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div>
+      		<img src="cow.jpg" width="100%" height="300vh">
+      	</div>
+      	<div class="details">
+      		<h3><a href="#">Cow</a><br><span> moo. ...,</span></h3>
+      	</div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 60,
+        stretch: 0,
+        depth: 500,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

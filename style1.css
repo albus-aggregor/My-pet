@@ -1,0 +1,144 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family:Ariel;
+}
+nav{
+	background: rgba(0,0,0,.5);
+	height:80px;
+	width:100%; 
+}
+label.logo{
+	color:white;
+	font-size:35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight:bold;
+}
+nav ul{
+	float:right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height:80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color:white;
+	font-size:17px;
+	padding: 7px 13px;
+	border-radius:3px;
+	text-transform: uppercase;
+}
+a.active,a:hover{
+	background: #1b9bff;
+	transition:.5s;
+}
+.checktn{
+	font-size:30px;
+	color: white;
+	float:right;
+	line-height: 80px;
+	margin-right:40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display:none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size:30px;
+		padding-left:50px;
+	}
+	nav ul li a{
+		font-size:16px;
+	}
+}
+@media (max-width: 858px){
+	.checktn{
+		display:block;
+	}
+	ul{
+		position: fixed;
+		width:100%;
+		height: 100vh;
+		background: #2c3e50;
+		top:80px;
+		left:-100;
+		text-align:center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display:block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size:20px;
+	}
+	a:hover,a.action{
+		background: none;
+		color: #0082e6;
+		box-shadow: 0 0 10px #0082e6, 0 0 40px #0082e6;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+.con{
+	 position: relative;
+	 background-repeat: no-repeat;
+	 height: calc(100vh-80px);
+	 animation: animate 16s ease-in-out infinite;
+	 background-size:cover;
+}
+@keyframes animate{
+	0%,100%{
+		background-image: url("i_dogs.jpg");
+	}
+	25%{
+		background-image: url("i_cats.jpg");
+	}
+	50%{
+		background-image: url("i_fish.jpg");
+	}
+	75%{
+		background-image: url("i_rabbit.jpg");
+	}
+}
+.details h1{
+	position:absolute;
+	text-align:center;
+	font-size: 5em;
+	top:140%;
+	color:rgba(11, 44, 122, 0.61);
+	text-shadow: 5px 5px 10px  #008b8b ,5px 5px 40px  #008b8b ;
+	animation-name: ani;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+}
+@keyframes ani {
+  0%   {color:red; left:0px; top:70px;}
+  25%  {color:yellow; left:1140px; top:70px;}
+  50%  {color:blue; left:1140px; top:680px;}
+  75%  {color:white; left:0px; top:680px;}
+  100% {color:red; left:0px; top:70px;}
+}
+@media (max-width: 850px){
+	#i1{
+		display: none;
+	}
+}
+#img1
+{
+	width: 5%;
+	height: 60%;
+	bottom: 10%
+}
